@@ -20,4 +20,6 @@ public class TechGlobalBasePage {
 
     @FindBy(css = "div[id='dropdown-menu'] a")
     public List<WebElement> headerDropdownOptions;
+
+
 }
