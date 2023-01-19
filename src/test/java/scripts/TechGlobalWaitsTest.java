@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pages.TechGlobalFrontendTestingHomePage;
 import pages.TechGlobalWaitsPage;
 import utilities.Driver;
+import utilities.Waiter;
 
 public class TechGlobalWaitsTest extends Base{
 
@@ -25,8 +26,7 @@ public class TechGlobalWaitsTest extends Base{
         Assert.assertTrue(techGlobalWaitsPage.actualRedBox.isDisplayed());
         techGlobalWaitsPage.blueButton.click();
 
-        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(),60);
-        webDriverWait.until(ExpectedConditions.visibilityOf(techGlobalWaitsPage.actualBlueBox));
+        Waiter.waitForVisibilityOfElement(techGlobalWaitsPage.actualBlueBox,60);
         Assert.assertTrue(techGlobalWaitsPage.actualBlueBox.isDisplayed());
 
     }
