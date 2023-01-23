@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <test name="All Functionalities">
+        <classes>
+            <class name="scripts.TechGlobalCheckBoxTest">
+                <methods>
+                    <include name="checkboxTest"/>
+                    <include name="validateCheckboxes2"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalDynamicElementTest">
+                <methods>
+                    <include name="dynamicElementsTest"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalFrontendTestingHomeTest">
+                <methods>
+                    <exclude name="validate_allCards"/>
+                    <include name="validateFrontendTestingURL"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalHeaderTest">
+                <methods>
+                    <exclude name="validateTechGlobalHeaderDropdown"/>
+                    <include name="validateTechGlobalHeaderDropdownOptions"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalRadioButtonTest">
+                <methods>
+                    <include name="checkBoxesTest"/>
+                    <include name="toolsRadioButtons"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalWaitsTest">
+                <methods>
+                    <include name="implementWaits"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
