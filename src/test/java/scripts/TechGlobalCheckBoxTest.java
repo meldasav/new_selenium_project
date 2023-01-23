@@ -22,5 +22,6 @@ public class TechGlobalCheckBoxTest extends Base{
         }
         techGlobalCheckboxPage.checkBoxesPart1.get(0).click();
         Assert.assertTrue(techGlobalCheckboxPage.checkBoxesPart1.get(0).isSelected());
+        Assert.assertFalse(techGlobalCheckboxPage.checkBoxesPart1.get(1).isSelected());
     }
 }
